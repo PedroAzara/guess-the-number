@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adivinhe o Numero</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+      .invisible{
+        visibility: hidden;
+      }
+      
+      
+    </style>
+  </head>
+  <body> 
+    <div style="text-align: center; margin-top:5%;">
+      
+        
+        <div class="columns ">
+        <div class="column is-half is-offset-one-quarter ">
+          <div class="card">
+          <div class="card-header" style="text-align: center;">
+<!-- 
+          <article class="message is-success" style="text-align: center; margin: auto;">
+            <div class="message-header" style="text-align: center;">
+              <p style="text-align: center;">Dark</p>
+              <button class="delete" aria-label="delete"></button>
+            </div>
+            <div class="message-body">
+              Parabéns!<br><strong>Você acertou!</strong>
+            </div>
+          </article> -->
+        </div>
+
+          <div class="card-content" style="text-align: center; margin-top: 10%;">
+            <section class="section" style="text-align: center;"  >
+              
+              <h1 class="title">
+                Acerte o Número!
+              </h1>
+              <p class="subtitle">
+                Tente descobrir o número de  <strong>1 a 100</strong> com ajuda das dicas!!
+              </p>
+              <input class="input is-rounded input is-medium" type="text" placeholder="Digite aqui seu número!" id="numeroJogador">
+              <button class="button is-success is-rounded is-large" style="margin-top: 5%" onclick="escolherNumero()">Confirmar!</button>
+            <div class="columns">
+              <div class="column is-8 is-offset-one-quarter" style="text-align:center; margin: auto;">
+                
+                <div class="notification is-danger invisible" style="margin-top: 5%; " id="aviso">
+                  Por favor, escolha um número entre 0 e 100!
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          
+    
+        
+        
+          </section>
+        </div>
+        </div>
+        <div style="text-align: center; ">
+        <div class="column  is-11  ">
+          <div class="card">
+           
+          <div class="card-content">
+
+            <div class="field has-addons" style="text-align: center; ">
+              <p class="control" style="text-align: center; margin: auto;">
+                <button class="button is-large is-rounded is-info" tyle="text-align: center;">
+                  <span class="icon is-large" >
+                    <i class="far fa-lightbulb"></i>
+                  </span>
+                  <span>Dica</span>
+                </button>
+              </p>
+          </div>
+            
+            <div class="subtitle">Testando</div>
+            <div class="subtitle">Testando</div>
+            <div class="subtitle">Testando</div>
+            <div class="subtitle">Testando</div>
+            <div class="subtitle">Testando</div>
+            
+            
+    
+        </div>
+    </div>
+    
+    </div> 
+    <script src="./script.js"></script>
+  </body>
+</html>
