@@ -1,6 +1,3 @@
-function gerarNumeroAleatorio(){
-    return Math.floor(Math.random() * 10)
-}
 
 function verificarSeEQuadradoPerfeito(n){
   raiz = Math.sqrt(n)
@@ -25,15 +22,29 @@ function verificarseEParOuImpar(n){
 
 function notificacaoAcerto(){
   console.log('Parabéns, vc acertou')
-    divModal = document.getElementById('modal1')
-    divModal.classList.add('is-active')
-    divModal.classList.add('is-clipped')
+    divCaixinha = document.getElementById('caixinha1')
+    divCaixinha.classList.remove('is-danger')
+    divCaixinha.classList.add('is-success')
+    divMsg = document.getElementById('msg1')
+    divMsg.innerHTML = 'Parabéns!<br>Você <strong>acertou!</strong>'
     
-    setTimeout(desaparecer, 1500)
+    setTimeout(desaparecer, 3500)
+}
+
+function notificacaoErro(){
+  console.log('Desculpe, você errou :(')
+    divCaixinha = document.getElementById('caixinha1')
+    divCaixinha.classList.add('is-danger')
+    divMsg = document.getElementById('msg1')
+    divMsg.innerHTML = 'Desculpe<br>Você errou, tente novamente :('
+    
+    setTimeout(desaparecer, 3500)
 }
 
 var desaparecer = function desaparecerNotificacao(){
-  divModal.classList.add('is-active')
+  divCaixinha.classList.remove('is-success')
+  divCaixinha.classList.remove('is-danger')
+  divMsg.innerHTML = 'Digite um número de 1 a 100 e clique em "Confirmar!" para ver seu resultado!'
 }
 
 function escolherNumero(){
@@ -42,12 +53,14 @@ function escolherNumero(){
   numeroJogadorFormatado = Number.parseInt(document.getElementById('numeroJogador').value)
   if(numeroJogadorFormatado >= 0 && numeroJogadorFormatado <=100){
     console.log(numeroJogadorFormatado)
+    document.getElementById('aviso').classList.add('invisible')
     if(numeroJogadorFormatado === 1){
       notificacaoAcerto()
     }else{
-      console.log('Vc errou')
+      notificacaoErro()
+      
     }
-    document.getElementById('aviso').classList.add('invisible')
+    
   }else{
     document.getElementById('aviso').classList.remove('invisible')
   }

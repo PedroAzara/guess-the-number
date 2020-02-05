@@ -15,26 +15,27 @@
     </style>
   </head>
   <body> 
-    <div style="text-align: center; margin-top:5%;">
+    <div style="text-align: center; margin-top:2%;">
       
         
         <div class="columns ">
         <div class="column is-half is-offset-one-quarter ">
-          <div class="card">
-          <div class="card-header" style="text-align: center;">
-<!-- 
-          <article class="message is-success" style="text-align: center; margin: auto;">
-            <div class="message-header" style="text-align: center;">
-              <p style="text-align: center;">Dark</p>
-              <button class="delete" aria-label="delete"></button>
-            </div>
-            <div class="message-body">
-              Parabéns!<br><strong>Você acertou!</strong>
-            </div>
-          </article> -->
-        </div>
+         
+            <div class="card" style="text-align: center; ">
 
-          <div class="card-content" style="text-align: center; margin-top: 10%;">
+            <article class="message " style="text-align: center; margin: auto;" id="caixinha1">
+              <div class="message-header" style="text-align: center;">
+                <p style="text-align: center; margin: auto;">Resultado</p>
+                
+              </div>
+              <div class="message-body" id="msg1">
+                Digite um número de 1 a 100 e clique em "Confirmar!" para ver seu resultado!
+
+              </div>  
+            </article>
+          </div>
+
+          <div class="card" style="text-align: center; margin-top: 3%;">
             <section class="section" style="text-align: center;"  >
               
               <h1 class="title">
@@ -43,8 +44,10 @@
               <p class="subtitle">
                 Tente descobrir o número de  <strong>1 a 100</strong> com ajuda das dicas!!
               </p>
-              <input class="input is-rounded input is-medium" type="text" placeholder="Digite aqui seu número!" id="numeroJogador">
-              <button class="button is-success is-rounded is-large" style="margin-top: 5%" onclick="escolherNumero()">Confirmar!</button>
+              
+                  <input class="input is-rounded input is-medium" type="text" style="width: 300px;" placeholder="Digite aqui seu número!" id="numeroJogador">
+               
+              <br><button class="button is-success is-rounded is-large" style="margin-top: 5%" onclick="escolherNumero()">Confirmar!</button>
             <div class="columns">
               <div class="column is-8 is-offset-one-quarter" style="text-align:center; margin: auto;">
                 
@@ -55,7 +58,7 @@
               </div>
               
             </div>
-          </div>
+          
           
     
         
@@ -67,11 +70,11 @@
         <div class="column  is-11  ">
           <div class="card">
            
-          <div class="card-content">
+          <div class="card-content" style="margin-top: 120%;">
 
             <div class="field has-addons" style="text-align: center; ">
-              <p class="control" style="text-align: center; margin: auto;">
-                <button class="button is-large is-rounded is-info" tyle="text-align: center;">
+              <p class="control" >
+                <button class="button is-large is-rounded is-info" style="text-align: center; margin: auto;">
                   <span class="icon is-large" >
                     <i class="far fa-lightbulb"></i>
                   </span>
@@ -83,8 +86,7 @@
             <div class="subtitle">Testando</div>
             <div class="subtitle">Testando</div>
             <div class="subtitle">Testando</div>
-            <div class="subtitle">Testando</div>
-            <div class="subtitle">Testando</div>
+            
             
             
     
